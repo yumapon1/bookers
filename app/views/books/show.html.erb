@@ -1,0 +1,8 @@
+<h2>タイトル</h2>
+<p><%= @book.title %></p>
+
+<h2>本文</h2>
+<p><%= @book.body %></p>
+
+<%= link_to "Back", "/books" %>
+<%= link_to "Edit", "/books/#{@book.id}/edit" %>

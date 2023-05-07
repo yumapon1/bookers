@@ -1,0 +1,22 @@
+<h1>Books</h1>
+
+<% @books.each do |book| %>
+
+  <p>本のタイトル</p>
+    <span>
+    <!--- <%= book.title %>--->
+
+  </span>
+
+ <p>感想</p>
+ <span><%= book.body %><span>
+
+
+
+<%= link_to "Show", "/books/#{book.id}" %>
+<%= link_to "Edit", "/books/#{book.id}/edit" %>
+<%= link_to "Destroy", "/books/#{book.id}", method: :delete, "data-confirm" => "本当に削除しますか？" %>
+
+
+
+<% end  %>
