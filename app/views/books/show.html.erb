@@ -1,8 +1,10 @@
-<h2>タイトル</h2>
+<%=   flash[:notice] %>
+<%=   flash[:message]  %>
+<h2>title</h2>
 <p><%= @book.title %></p>
 
-<h2>本文</h2>
+<h2>body</h2>
 <p><%= @book.body %></p>
 
-<%= link_to "Back", "/books" %>
 <%= link_to "Edit", "/books/#{@book.id}/edit" %>
+<%= link_to "Back", "/books" %>
