@@ -19,7 +19,7 @@ class BooksController < ApplicationController
   def index
     @books = Book.all
 
-    @books = Book.all.order(id: :asc)
+    @books = Book.all.order(id: :)
 
     @book = Book.new
   end
